@@ -1,0 +1,52 @@
+[
+  {
+    "dataset": "german_credit",
+    "title": "Statlog (German Credit Data)",
+    "url": "https://archive.ics.uci.edu/static/public/144/statlog+german+credit+data.zip",
+    "landing_page": "https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data",
+    "dataset_doi": "10.24432/C5NC77",
+    "licence": "CC BY 4.0",
+    "http_status": 200,
+    "retrieved_at_utc": "2026-10-26T09:11:15+00:00",
+    "archive": "data/raw/german_credit/statlog_german_credit_data.zip",
+    "archive_sha256": "e12d9d5def6845c0622634a1cd2ab87fa470668c4298f1ec52a4e403376a435b",
+    "archive_bytes": 29607,
+    "files": {
+      "german.data": {
+        "sha256": "b21f3d81db8071257d5ff1deaeba1fd4303b62712e6fcc9715c7a86202cb5871",
+        "bytes": 79793
+      },
+      "german.data-numeric": {
+        "sha256": "2752b044394958ab6dd193a0b56ca0f0b3a2d8bc7cb8c008e35a5e84bbec02f8",
+        "bytes": 102000
+      },
+      "german.doc": {
+        "sha256": "69b92cb551111bc37098698288849c96f0fd87ce81a2e54451ff39aa1e53fe49",
+        "bytes": 4679
+      },
+      "Index": {
+        "sha256": "30cd5a2ef694f379fd65e5835ffd0f8405d6c225c3711a8cc0c8e12f55501e91",
+        "bytes": 150
+      }
+    }
+  },
+  {
+    "dataset": "credit_default",
+    "title": "Default of Credit Card Clients",
+    "url": "https://archive.ics.uci.edu/static/public/350/default+of+credit+card+clients.zip",
+    "landing_page": "https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients",
+    "dataset_doi": "10.24432/C55S3H",
+    "licence": "CC BY 4.0",
+    "http_status": 200,
+    "retrieved_at_utc": "2026-10-26T09:11:33+00:00",
+    "archive": "data/raw/credit_default/default_of_credit_card_clients.zip",
+    "archive_sha256": "56c885f84457f6680f8438f02bfcdac9579323d8a94465ee5f26e32baa727602",
+    "archive_bytes": 5539494,
+    "files": {
+      "default of credit card clients.xls": {
+        "sha256": "30c6be3abd8dcfd3e6096c828bad8c2f011238620f5369220bd60cfc82700933",
+        "bytes": 5539328
+      }
+    }
+  }
+]

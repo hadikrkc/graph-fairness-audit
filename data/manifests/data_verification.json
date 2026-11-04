@@ -1,0 +1,79 @@
+{
+  "german_credit": {
+    "rows": 1000,
+    "features": 20,
+    "rows_match_uci": true,
+    "features_match_uci": true,
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "target_distribution": {
+      "1": 700,
+      "2": 300
+    },
+    "sensitive_distributions": {
+      "personal_status_sex": {
+        "A91": 50,
+        "A92": 310,
+        "A93": 548,
+        "A94": 92
+      },
+      "foreign_worker": {
+        "A201": 963,
+        "A202": 37
+      }
+    },
+    "age_summary": {
+      "count": 1000.0,
+      "mean": 35.55,
+      "std": 11.38,
+      "min": 19.0,
+      "25%": 27.0,
+      "50%": 33.0,
+      "75%": 42.0,
+      "max": 75.0
+    }
+  },
+  "credit_default": {
+    "rows": 30000,
+    "features": 23,
+    "rows_match_uci": true,
+    "features_match_uci": true,
+    "missing_values": 0,
+    "duplicate_rows": 35,
+    "target_distribution": {
+      "0": 23364,
+      "1": 6636
+    },
+    "sensitive_distributions": {
+      "X2": {
+        "1": 11888,
+        "2": 18112
+      },
+      "X3": {
+        "0": 14,
+        "1": 10585,
+        "2": 14030,
+        "3": 4917,
+        "4": 123,
+        "5": 280,
+        "6": 51
+      },
+      "X4": {
+        "0": 54,
+        "1": 13659,
+        "2": 15964,
+        "3": 323
+      }
+    },
+    "age_summary": {
+      "count": 30000.0,
+      "mean": 35.49,
+      "std": 9.22,
+      "min": 21.0,
+      "25%": 28.0,
+      "50%": 34.0,
+      "75%": 41.0,
+      "max": 79.0
+    }
+  }
+}

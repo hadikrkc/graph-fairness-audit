@@ -1,0 +1,5 @@
+dataset,group,n,positives,favourable_rate,node_predictors,sensitive,label,majority_accuracy_dataset,group_definition
+German,G=0: Attribute9 != A92,690,499,0.723,19,"legacy grouping G=1 (Attribute 9 = A92), not verified sex",good credit,0.7,"Sensitivity analysis: G=1 for Attribute9=A92, G=0 otherwise; not verified female/male membership"
+German,G=1: Attribute9 = A92,310,201,0.648,19,"legacy grouping G=1 (Attribute 9 = A92), not verified sex",good credit,0.7,"Sensitivity analysis: G=1 for Attribute9=A92, G=0 otherwise; not verified female/male membership"
+Credit,S=0: documented SEX=1 (male),1982,1503,0.758,22,documented SEX category S=1 (SEX=2),no default,0.779,"Primary audit: S=1 for documented SEX=2, S=0 for SEX=1; historical recorded categories"
+Credit,S=1: documented SEX=2 (female),3018,2391,0.792,22,documented SEX category S=1 (SEX=2),no default,0.779,"Primary audit: S=1 for documented SEX=2, S=0 for SEX=1; historical recorded categories"

@@ -1,0 +1,78 @@
+{
+  "revision": "v3_rq_controls_2026-11-04",
+  "group": "Mozzarella",
+  "seeds": [
+    11,
+    23,
+    37,
+    47,
+    59
+  ],
+  "primary_seed": 11,
+  "spaces": [
+    "full",
+    "unaware",
+    "legit"
+  ],
+  "families": [
+    "union",
+    "mutual",
+    "admissible"
+  ],
+  "k_grid": [
+    5,
+    15,
+    30
+  ],
+  "ref_k": 15,
+  "n_assoc": 3,
+  "kappa": 2,
+  "dist_quantile": 0.95,
+  "degree_mult": 2,
+  "split": [
+    0.6,
+    0.2,
+    0.2
+  ],
+  "hidden": 32,
+  "dropout": 0.3,
+  "lr": 0.01,
+  "weight_decay": 0.0005,
+  "epochs": 200,
+  "patience": 20,
+  "lambda_sp": 1.0,
+  "lambda_eo": 5.0,
+  "cfa": {
+    "alpha": 0.4,
+    "tau": 0.4,
+    "beta": 0.5,
+    "gamma": 1.0,
+    "gp": 1.0,
+    "n_contrast": 512
+  },
+  "utility_tol": 2.0,
+  "budget_grid": [
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    8.0
+  ],
+  "drop_rates": [
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "drop_repeats": 3,
+  "retrain_random_draws": 3,
+  "hgb_leaf_grid": [
+    7,
+    15,
+    31
+  ],
+  "hgb_iterations": 200,
+  "n_boot": 1000,
+  "subset_n": 5000,
+  "subset_seed": 20261026
+}

@@ -1,0 +1,29 @@
+id,kind,file,title
+TableS1_data_provenance,table,tables/TableS1_data_provenance.csv,"Data access and provenance (UCI, CC BY 4.0)"
+TableS2_cohorts_group_support,table,tables/TableS2_cohorts_group_support.csv,"Cohorts, recorded groups, base rates and majority-class accuracy"
+Table01_RQ1_graph_multiverse_statistics,table,tables/Table01_RQ1_graph_multiverse_statistics.csv,"Graph multiverse: size, connectivity, group degree balance and sensitive homophily per recipe (mean over 5 splits)"
+Fig01_RQ1_gain_heatmap,figure,figures/Fig01_RQ1_gain_heatmap.pdf,Paired EOdds gain of each fair method over GCN for every graph recipe
+Fig02_RQ1_specification_curve,figure,figures/Fig02_RQ1_specification_curve.pdf,Specification curve of EOdds gains over GCN across the construction multiverse
+Table02A_RQ1_construction_envelope,table,tables/Table02A_RQ1_construction_envelope.csv,"Construction envelope of EOdds gains, sign reversals and utility vs logistic regression"
+Table02B_RQ1_rank_stability_variance,table,tables/Table02B_RQ1_rank_stability_variance.csv,Kendall's W of model rankings and variance decomposition (method vs construction)
+Table03_RQ2_associated_field_screening,table,tables/Table03_RQ2_associated_field_screening.csv,Training-only association with the dataset-specific audit group (5 splits); top-3 fields are screened
+Fig03_RQ2_excess_sensitive_homophily,figure,figures/Fig03_RQ2_excess_sensitive_homophily.pdf,"Excess sensitive homophily by attribute space, family and k"
+Fig04_RQ2_sensitive_probe_propagation,figure,figures/Fig04_RQ2_sensitive_probe_propagation.pdf,Recoverability of the dataset-specific audit group from propagated node features
+Table04_RQ2_crossed_feature_topology_ablation,table,tables/Table04_RQ2_crossed_feature_topology_ablation.csv,Crossed removal of associated fields from node features and/or graph distances (union k=15; mean ± 95% CI)
+Fig05_RQ3_legitimacy_rank_ecdf,figure,figures/Fig05_RQ3_legitimacy_rank_ecdf.pdf,Screened-space rank distribution of same- vs cross-group edges (union k=15)
+Table05_RQ3_admissibility_audit_card,table,tables/Table05_RQ3_admissibility_audit_card.csv,Edge-admissibility audit card for union kNN graphs (mean over 5 splits)
+Fig06_RQ3_admissible_vs_random_retrained,figure,figures/Fig06_RQ3_admissible_vs_random_retrained.pdf,"Change in EOdds after retraining; average over k within each split, descriptive split intervals"
+Table06_RQ3_fixed_model_edge_interventions,table,tables/Table06_RQ3_fixed_model_edge_interventions.csv,Fixed trained models re-evaluated on constraint-filtered vs matched-random graphs (union k=15; mean ± 95% CI)
+Table07_RQ4_validation_locked_selection,table,tables/Table07_RQ4_validation_locked_selection.csv,Held-out balanced accuracy and EOdds of validation-locked selectors (mean ± 95% CI over 5 splits)
+Fig07_RQ4_validation_test_agreement,figure,figures/Fig07_RQ4_validation_test_agreement.pdf,"Validation vs test metrics of deployable graph recipes, with within-split rank agreement"
+Fig08_RQ4_utility_budget_sensitivity,figure,figures/Fig08_RQ4_utility_budget_sensitivity.pdf,Test EOdds and balanced accuracy of the selectors as the utility budget varies
+Table08_RQ4_selection_stability_and_regret,table,tables/Table08_RQ4_selection_stability_and_regret.csv,Recipe stability across splits and test-oracle regret of validation-locked selectors (mean ± 95% CI over 5 splits)
+Fig09_RQ5_transductive_to_inductive,figure,figures/Fig09_RQ5_transductive_to_inductive.pdf,Constraint-selected recipes: accuracy–fairness shift from transductive to inductive scoring
+Fig10_RQ5_edge_deletion_robustness,figure,figures/Fig10_RQ5_edge_deletion_robustness.pdf,Paired EOdds gains under random edge deletion without retraining
+Table09_RQ5_cross_dataset_agreement,table,tables/Table09_RQ5_cross_dataset_agreement.csv,"Recipe portability: source mean-validation-gain choice; destination fits reused, no destination recipe reselection"
+Table10_RQ5_persistence_matrix,table,tables/Table10_RQ5_persistence_matrix.csv,Persistence of fairness claims across conditions and datasets (paired t-CI; bootstrap on primary split)
+TableS3_reference_configuration_results,table,tables/TableS3_reference_configuration_results.csv,Anchor-style results at union k=15 (full and unaware spaces) and tabular baselines
+TableS4_method_verification,table,tables/TableS4_method_verification.csv,Built-in method verification checks
+TableS5_RQ3_paired_audit_controls,table,tables/TableS5_RQ3_paired_audit_controls.csv,Audit minus edge-count-matched random control; draws and k averaged within split; descriptive split intervals
+TableS6_RQ4_controlled_selector_ablation,table,tables/TableS6_RQ4_controlled_selector_ablation.csv,"Same utility floor: family restriction then minimax objective; infeasible splits abstain, contrasts are feasible-split conditional"
+TableS7_RQ2_topology_only_probe,table,tables/TableS7_RQ2_topology_only_probe.csv,"Attribute-free degree/neighbour-degree/isolation linear probe; limited structural descriptors, not a bound on all topology information"

@@ -1,0 +1,23 @@
+{
+  "source": "credit_default",
+  "n": 5000,
+  "seed": 20261026,
+  "stratify_on": [
+    "Y",
+    "X2"
+  ],
+  "population_strata_share": {
+    "0_1": 0.3005,
+    "0_2": 0.4783,
+    "1_1": 0.0958,
+    "1_2": 0.1254
+  },
+  "subset_strata_share": {
+    "0_1": 0.3006,
+    "0_2": 0.4782,
+    "1_1": 0.0958,
+    "1_2": 0.1254
+  },
+  "subset_csv_sha256": "243d50e92374821eb2b005d047e9c0be31eb9cc7734c4374837cc0b765206562",
+  "subset_ids_sha256": "d7873e5f2f1e25d2f7f1c46b3283b73e3f32a7d14037265146b1292a4351722f"
+}

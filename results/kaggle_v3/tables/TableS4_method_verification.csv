@@ -1,0 +1,7 @@
+check,all_passed,times_checked
+"admissible graphs satisfy legitimacy, distance and degree constraints",True,90
+each fixed-model random control matches its filter edge count,True,240
+graphs are symmetric without self-loops,True,270
+inductive: references receive no query messages; no query-query edges,True,47
+retraining random controls exactly match admissible edge count,True,180
+transductive retraining reproduces the grid result,True,1

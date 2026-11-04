@@ -1,0 +1,7 @@
+dataset,method,mean_gain,min_recipe_gain,max_recipe_gain,recipes,recipes_negative_mean,recipes_interval_above_zero,recipes_interval_below_zero,splits_with_sign_reversal,share_runs_bal_acc_above_logreg,share_runs_bal_acc_above_hgb,group_definition
+German,GCN-SP,4.11,-2.81,14.19,27,6,8,0,5/5,0.148,0.341,"Sensitivity analysis: G=1 for Attribute9=A92, G=0 otherwise; not verified female/male membership"
+German,GCN-EO,1.244,-8.166,10.45,27,13,4,1,5/5,0.222,0.43,"Sensitivity analysis: G=1 for Attribute9=A92, G=0 otherwise; not verified female/male membership"
+German,CFA-GCN,-0.037,-7.131,7.643,27,16,1,0,5/5,0.2,0.43,"Sensitivity analysis: G=1 for Attribute9=A92, G=0 otherwise; not verified female/male membership"
+Credit,GCN-SP,2.594,0.659,6.73,27,0,4,0,5/5,0.267,0.215,"Primary audit: S=1 for documented SEX=2, S=0 for SEX=1; historical recorded categories"
+Credit,GCN-EO,1.404,-0.795,4.037,27,3,2,0,5/5,0.311,0.267,"Primary audit: S=1 for documented SEX=2, S=0 for SEX=1; historical recorded categories"
+Credit,CFA-GCN,-0.17,-2.623,2.377,27,15,0,1,5/5,0.385,0.326,"Primary audit: S=1 for documented SEX=2, S=0 for SEX=1; historical recorded categories"

@@ -1,0 +1,4 @@
+method,analysis_scope,recipes,kendall_tau,sign_agreement,interval_above_zero_both,German→Credit recipe,German→Credit test gain,Credit best deployable test gain,Credit→German recipe,Credit→German test gain,German best deployable test gain
+GCN-SP,recipe portability across different group definitions; not sex-fairness replication,27,0.499,78%,3,unaware/mutual/k30,2.00 ± 1.44,3.33,unaware/admissible/k5,0.79 ± 7.05,7.6
+GCN-EO,recipe portability across different group definitions; not sex-fairness replication,27,0.288,56%,0,unaware/mutual/k30,0.53 ± 2.35,2.25,unaware/union/k30,-8.17 ± 7.95,6.45
+CFA-GCN,recipe portability across different group definitions; not sex-fairness replication,27,-0.048,37%,0,unaware/mutual/k30,0.63 ± 3.75,1.39,legit/admissible/k15,-0.11 ± 6.60,7.64

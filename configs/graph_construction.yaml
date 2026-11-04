@@ -1,0 +1,56 @@
+# Locked v3 design.
+# The notebook uses its self-contained CFG.
+# Earlier exploratory work informed this design; this is not a preregistration.
+similarity:
+  metric: euclidean
+  k_neighbours: [5, 15, 30]
+  families: [union, mutual, admissible]
+  tie_breaking: by_person_id
+feature_spaces:
+  full: include_standardised_audit_group_diagnostic_only
+  unaware: exclude_group_defining_field
+  legit: exclude_group_defining_field_and_top_3_training_associated_fields
+admissibility:
+  legitimacy_rank_kappa: 2
+  training_distance_quantile: 0.95
+  degree_cap_multiple_of_k: 2
+  repair_isolated_nodes: false
+leakage_rules:
+  use_labels_in_graph: false
+  fit_scalers_on: train
+  screen_associated_fields_on: train
+  select_recipe_using: validation_metrics_only
+  test_metrics: reporting_only
+split: [0.6, 0.2, 0.2]
+stratify_by: [outcome, dataset_specific_audit_group]
+seeds: [11, 23, 37, 47, 59]
+evaluation_modes: [transductive, strict_inductive]
+utility_budget_pp: 2.0
+utility_budget_grid_pp: [0.5, 1.0, 2.0, 4.0, 8.0]
+random_controls:
+  retraining_graphs_per_configuration: 3
+  fixed_model_intervention_draws: 3
+  fixed_model_matching: separate_edge_count_for_each_filter
+perturbation:
+  edge_drop_rates: [0.0, 0.1, 0.25, 0.5]
+  draws: 3
+bootstrap:
+  primary_seed: 11
+  resamples: 1000
+
+selection_policy:
+  utility_reference: per_fair_method_best_eligible_validation_balanced_accuracy
+  audit_objective: worst_validation_eodds_over_all_admissible_k_by_space
+  automatic_floor_relaxation: true
+  export_actual_shortfall: true
+  supplementary_control: same_floor_family_only_then_minimax_with_strict_abstention
+tabular_baselines: [Majority, LogReg, MLP, HGB]
+hgb:
+  max_leaf_nodes_grid: [7, 15, 31]
+  max_iter: 200
+  learning_rate: 0.1
+  l2_regularization: 1.0
+  class_weight: balanced
+  early_stopping: false
+  select_on: validation_balanced_accuracy_then_fewer_leaves
+inductive_degree_scope: undirected_reference_graph_cap_and_at_most_k_attachments_per_query

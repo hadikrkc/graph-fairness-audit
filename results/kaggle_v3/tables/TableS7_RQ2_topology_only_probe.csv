@@ -1,0 +1,13 @@
+dataset,space,family,probe,held_out_group_auc,n_splits,group_definition
+Credit,full,admissible,degree_neighbour_degree_isolation,0.72 ± 0.02,5,"Primary audit: S=1 for documented SEX=2, S=0 for SEX=1; historical recorded categories"
+Credit,full,union,degree_neighbour_degree_isolation,0.58 ± 0.02,5,"Primary audit: S=1 for documented SEX=2, S=0 for SEX=1; historical recorded categories"
+Credit,legit,admissible,degree_neighbour_degree_isolation,0.50 ± 0.02,5,"Primary audit: S=1 for documented SEX=2, S=0 for SEX=1; historical recorded categories"
+Credit,legit,union,degree_neighbour_degree_isolation,0.52 ± 0.01,5,"Primary audit: S=1 for documented SEX=2, S=0 for SEX=1; historical recorded categories"
+Credit,unaware,admissible,degree_neighbour_degree_isolation,0.50 ± 0.01,5,"Primary audit: S=1 for documented SEX=2, S=0 for SEX=1; historical recorded categories"
+Credit,unaware,union,degree_neighbour_degree_isolation,0.53 ± 0.01,5,"Primary audit: S=1 for documented SEX=2, S=0 for SEX=1; historical recorded categories"
+German,full,admissible,degree_neighbour_degree_isolation,0.77 ± 0.20,5,"Sensitivity analysis: G=1 for Attribute9=A92, G=0 otherwise; not verified female/male membership"
+German,full,union,degree_neighbour_degree_isolation,0.60 ± 0.06,5,"Sensitivity analysis: G=1 for Attribute9=A92, G=0 otherwise; not verified female/male membership"
+German,legit,admissible,degree_neighbour_degree_isolation,0.60 ± 0.06,5,"Sensitivity analysis: G=1 for Attribute9=A92, G=0 otherwise; not verified female/male membership"
+German,legit,union,degree_neighbour_degree_isolation,0.57 ± 0.07,5,"Sensitivity analysis: G=1 for Attribute9=A92, G=0 otherwise; not verified female/male membership"
+German,unaware,admissible,degree_neighbour_degree_isolation,0.59 ± 0.09,5,"Sensitivity analysis: G=1 for Attribute9=A92, G=0 otherwise; not verified female/male membership"
+German,unaware,union,degree_neighbour_degree_isolation,0.56 ± 0.06,5,"Sensitivity analysis: G=1 for Attribute9=A92, G=0 otherwise; not verified female/male membership"

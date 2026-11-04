@@ -1,0 +1,55 @@
+# Data sources for Project 10 (Fairness and graph construction).
+# Source of truth for download URLs, licences and expected shapes.
+# Checksums are written by scripts/01_download_data.py into data/manifests/.
+
+german_credit:
+  title: Statlog (German Credit Data)
+  uci_id: 144
+  landing_page: https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data
+  download_url: https://archive.ics.uci.edu/static/public/144/statlog+german+credit+data.zip
+  dataset_doi: 10.24432/C5NC77
+  licence: CC BY 4.0
+  creators: [Hans Hofmann]
+  citation: >-
+    Hofmann, H. (1994). Statlog (German Credit Data) [Dataset].
+    UCI Machine Learning Repository. https://doi.org/10.24432/C5NC77
+  raw_file: german.data          # space-separated, 20 attributes + class
+  expected_rows: 1000
+  expected_features: 20
+  target: class                  # 1 = good, 2 = bad
+  sensitive_candidates:
+    - Attribute9                 # personal status and sex (combined)
+    - Attribute13                # age in years
+    - Attribute20                # foreign worker
+  use: full dataset (1,000 records)
+
+credit_default:
+  title: Default of Credit Card Clients
+  uci_id: 350
+  landing_page: https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
+  download_url: https://archive.ics.uci.edu/static/public/350/default+of+credit+card+clients.zip
+  dataset_doi: 10.24432/C55S3H
+  licence: CC BY 4.0
+  creators: [I-Cheng Yeh]
+  citation: >-
+    Yeh, I.-C. (2009). Default of Credit Card Clients [Dataset].
+    UCI Machine Learning Repository. https://doi.org/10.24432/C55S3H
+  intro_paper_doi: 10.1016/j.eswa.2007.12.020
+  raw_file: default of credit card clients.xls   # header row is on line 2
+  expected_rows: 30000
+  expected_features: 23
+  target: Y                      # default payment next month (1 = yes)
+  sensitive_candidates:
+    - X2                         # SEX (1 = male, 2 = female)
+    - X3                         # EDUCATION
+    - X4                         # MARRIAGE
+    - X5                         # AGE
+  use: fixed stratified subset (see subset below)
+
+subset:
+  dataset: credit_default
+  n: 5000
+  seed: 20261026
+  # Stratification cells: target x sex. Fixed before the locked analysis.
+  stratify_on: [Y, X2]
+  output: data/processed/credit_default_subset_5000.csv
