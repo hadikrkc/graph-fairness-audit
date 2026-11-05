@@ -1,5 +1,7 @@
 # Constraint-aware auditing of fairness gains in tabular-to-graph learning
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23982275.svg)](https://doi.org/10.5281/zenodo.23982275)
+
 Fair graph neural networks (GNNs) are often evaluated on credit datasets such as German Credit and Credit Default.
 These are tables: no network between applicants was ever recorded, and the "graph" is built by the researcher from
 attribute similarity. This repository asks whether reported fairness gains are properties of the methods or
@@ -134,7 +136,13 @@ notebook/source hash comparison are separate checks; remote code was not downloa
 
 ## Citation and licence
 
-Code is released under the [MIT licence](LICENSE). Citation metadata is in [`CITATION.cff`](CITATION.cff); a Zenodo
-DOI will be added with the first release.
+Code is released under the [MIT licence](LICENSE). Citation metadata is in [`CITATION.cff`](CITATION.cff).
+The code and results are archived on Zenodo:
+
+- v0.3.0 (the version that produced the reported results): [doi:10.5281/zenodo.23982275](https://doi.org/10.5281/zenodo.23982275)
+- all versions (resolves to the latest): [doi:10.5281/zenodo.23982274](https://doi.org/10.5281/zenodo.23982274)
+
+> Kirkici, A., & Tiwari, Y. (2026). *Constraint-aware auditing of fairness gains in tabular-to-graph learning*
+> (Version 0.3.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23982275
 
 Authors: Abdulhadi Kirkici and Yash Tiwari. We thank Prof. Dr. Raja Hashim Ali for supervision.

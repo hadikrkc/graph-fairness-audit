@@ -9,6 +9,15 @@ authors:
     given-names: Yash
 license: MIT
 version: "0.3.0"
+doi: 10.5281/zenodo.23982274
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23982274
+    description: Concept DOI for all versions
+  - type: doi
+    value: 10.5281/zenodo.23982275
+    description: DOI of version 0.3.0
+repository-code: "https://github.com/hadikrkc/graph-fairness-audit"
 date-released: "2026-11-04"
 keywords:
   - fair graph learning
