@@ -56,11 +56,7 @@ Li, C., Cheng, D., Zhang, G., & Zhang, S. (2024). Contrastive learning for fair 
 via counterfactual graph augmentation. *Knowledge-Based Systems*, 305, 112635.
 [10.1016/j.knosys.2024.112635](https://doi.org/10.1016/j.knosys.2024.112635)
 
-The publisher-version PDF is available in this project at
-`paper/1-s2.0-S0950705124012693-main.pdf`. Attach that file when asking for a paper review.
-Local file availability does not establish that a separate conversation successfully received or read
-the upload. If a reviewer uses an author-accepted manuscript instead, distinguish that version from
-the published copy and verify any relevant differences against the publisher PDF.
+The publisher PDF is not redistributed. Use the DOI above to identify the published version; distinguish an accepted manuscript from the publisher version when reviewing it.
 
 The download records above document access on 26 October 2026. They do not establish the current
 access status of publisher or repository pages. The manifests are supporting provenance records;

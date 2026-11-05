@@ -8,8 +8,7 @@
 
 **Notebook:** `notebooks/p10_graph_fairness_audit.ipynb` (built by `scripts/04_build_notebook.py`; Kaggle-ready)
 
-**Primary reported results:** `results/kaggle_v3/`. All manuscript numbers,
-figures, tables and active summaries use this source.
+**Primary reported results:** `results/kaggle_v3/`. All manuscript numbers, figures, tables and active result summaries use this source. Local runs are comparison-only.
 
 ## Contribution and position
 

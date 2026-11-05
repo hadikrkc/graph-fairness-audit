@@ -11,8 +11,8 @@ data/processed/
 
 # Local notebook runs (outputs of scripts/05_run_notebook.py or a direct run)
 runs/
-p10_outputs/
-p10_data/
-p10_results.zip
+/p10_outputs/
+/p10_data/
+/p10_results.zip
 
 .DS_Store

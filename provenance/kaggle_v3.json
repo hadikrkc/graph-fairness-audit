@@ -1,0 +1,82 @@
+{
+  "working_notebook": "notebooks/p10_graph_fairness_audit.ipynb",
+  "executed_notebook": "notebooks/executed/p10_graph_fairness_audit.kaggle.ipynb",
+  "working_file_sha256": "0d46f3a274fc9d1d46f5a31e68ea7b65e811e0e47f61cb27b4d8d7ed07adbffa",
+  "executed_file_sha256": "2db06f72b0b6b4e7beeded68275991117b4413b24bd30021aad3085cb3730cf0",
+  "working_code_sha256": "4314ad924f2ef46db746b9f7064324944480dff79f3f0be740e565eb629313f5",
+  "executed_code_sha256": "4314ad924f2ef46db746b9f7064324944480dff79f3f0be740e565eb629313f5",
+  "working_code_cells": 33,
+  "executed_code_cells": 33,
+  "code_match": true,
+  "mismatching_code_cell_numbers": [],
+  "execution_complete": true,
+  "missing_execution_counts": [],
+  "error_code_cell_numbers": [],
+  "status": "code_and_execution_match",
+  "checked_utc": "2026-11-04T20:05:34+00:00",
+  "public_version_url": "https://www.kaggle.com/code/hadikrkc/p10-graph-fairness-audit?scriptVersionId=365706511",
+  "public_access_verified": true,
+  "public_version_link_pending": false,
+  "run_evidence": {
+    "notebook_schema_valid": true,
+    "execution_counts_sequential": true,
+    "full_mode": true,
+    "kaggle_mode": true,
+    "environment_log_matches_saved_record": true,
+    "key_findings_display_matches_saved_file": true,
+    "completion_log_present": true,
+    "reported_compute_runtime_minutes": 44.0,
+    "papermill_duration_seconds": 2658.46657,
+    "start_utc": "2026-11-04T17:45:25.18532+00:00",
+    "end_utc": "2026-11-04T18:29:43.65189+00:00"
+  },
+  "public_notebook_url": "https://www.kaggle.com/code/hadikrkc/p10-graph-fairness-audit",
+  "public_notebook_link_pending": false,
+  "version_specific_url_verified": true,
+  "public_access_check": {
+    "checked_utc": "2026-11-05T14:03:02+00:00",
+    "method": "unauthenticated HTTPS GET, no cookies or login",
+    "request_url": "https://www.kaggle.com/code/hadikrkc/p10-graph-fairness-audit",
+    "http_status": 200,
+    "outcome": "verified",
+    "page_title": "p10_graph_fairness_audit | Kaggle",
+    "notebook_attempts": [
+      {
+        "method": "browser",
+        "status": 200,
+        "final_url": "https://www.kaggle.com/code/hadikrkc/p10-graph-fairness-audit",
+        "bytes": 8605,
+        "title": [
+          "p10_graph_fairness_audit | Kaggle"
+        ],
+        "checked_utc": "2026-11-05T14:01:16+00:00"
+      },
+      {
+        "method": "plain",
+        "status": 200,
+        "final_url": "https://www.kaggle.com/code/hadikrkc/p10-graph-fairness-audit",
+        "bytes": 8605,
+        "title": [
+          "p10_graph_fairness_audit | Kaggle"
+        ],
+        "checked_utc": "2026-11-05T14:01:16+00:00"
+      }
+    ],
+    "version_url": "https://www.kaggle.com/code/hadikrkc/p10-graph-fairness-audit?scriptVersionId=365706511",
+    "version_http_status": 200,
+    "version_id": "365706511",
+    "version_id_present_in_page": true,
+    "previous_check": {
+      "checked_utc": "2026-11-05T13:51:05+00:00",
+      "method": "unauthenticated HTTPS GET",
+      "request_url": "https://www.kaggle.com/code/hadikrkc/p10-graph-fairness-audit",
+      "http_status": 404,
+      "outcome": "not_verified",
+      "note": "The supplied notebook URL returned HTTP 404; public access and an immutable version URL are not established."
+    },
+    "verification_scope": "Public HTTP access to the named notebook and version page. Remote code bytes were not downloaded; the existing local downloaded-notebook/source comparison is separate.",
+    "note": "Earlier HTTP 404 responses were client/request-specific observations; both ordinary notebook requests and the browser-header version request now returned HTTP 200. The cause of the earlier responses is not established."
+  },
+  "primary_results": "results/kaggle_v3/",
+  "results_archive": "results/p10_results.zip"
+}

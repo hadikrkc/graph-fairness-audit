@@ -10,13 +10,31 @@
 | Platform | Kaggle, CPU, Linux x86-64 |
 | Environment | Python 3.13.18, NumPy 2.1.3, pandas 2.3.3, scikit-learn 1.6.1, PyTorch 2.11.0+cpu (`results/kaggle_v3/environment.json`) |
 | Date | 4 November 2026 |
+| Downloaded executed notebook | `notebooks/executed/p10_graph_fairness_audit.kaggle.ipynb` |
+| Executed file SHA-256 | `2db06f72b0b6b4e7beeded68275991117b4413b24bd30021aad3085cb3730cf0` |
+| Code-cell SHA-256 (both notebooks) | `4314ad924f2ef46db746b9f7064324944480dff79f3f0be740e565eb629313f5` |
+| Recorded compute runtime | 44.0 minutes; Papermill total 2,658.47 seconds |
 
 The environment record lists the core packages only; SciPy, Matplotlib, joblib and threadpoolctl versions were not
 recorded and are left unpinned in `requirements.txt`.
 
-The link between this source file and the Kaggle run rests on the configuration revision, the identical
-configuration file and the timing of the run. A comparison of the executed Kaggle notebook's code cells with the
-source file has not yet been made; it will be added together with the public Kaggle version link.
+The downloaded executed notebook has been compared with the source: all 33 ordered code cells
+match exactly, execution counts run from 1 to 33 and there are no error outputs. Its environment log,
+run counts and displayed key findings match the bundled primary result package. The whole-file
+hashes differ because outputs/metadata differ; the ordered code-cell hashes are identical.
+The record is `provenance/kaggle_v3.json`; `provenance/SHA256SUMS` covers both notebooks, that
+record, the original ZIP and all 47 primary output files.
+
+The public notebook URL is https://www.kaggle.com/code/hadikrkc/p10-graph-fairness-audit .
+Its page-disclosed version URL is https://www.kaggle.com/code/hadikrkc/p10-graph-fairness-audit?scriptVersionId=365706511 .
+Both were accessible without login/cookies on recheck on 5 November 2026 (HTTP 200, expected
+page title and version ID). Earlier 404 responses are retained as history, not the current
+access status. This HTTP check did not download remote code; the bundled downloaded-file/source
+hash match remains separate evidence.
+
+Run `.venv/bin/python scripts/07_verify_repository.py` to validate the bundled artifacts,
+source/execute match, archive byte identity, local Markdown links and package/citation version
+consistency. This does not run models or require a private data download.
 
 ## Checks on the reported outputs
 
@@ -47,7 +65,8 @@ Differences are more frequent in Credit (32% of its runs differ by at least 0.01
 larger in German (95th percentile 2.6 pp against 1.3 pp), whose test groups are small enough for a few changed
 predictions to move the equalised-odds gap by several points. Because selectors pick different recipes in some
 splits, the local run has 204 deployment fits and 2,040 edge-deletion evaluations instead of 210 and 2,100. The
-German ordering of the RQ4 selectors differs between the two environments, so it is not used as evidence of an
-advantage for any selector.
+German ordering of the RQ4 selectors differs between the two environments. RQ4 is therefore
+reported as a negative or unstable result, with environment sensitivity stated as a limitation;
+the audit selector is not described as generally superior.
 
 Only the Kaggle v3 outputs in `results/kaggle_v3/` are reported. The local run serves as this comparison only.
